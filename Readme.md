@@ -13,7 +13,13 @@ The migrations also create a `pgmigrations` metadata table that keeps track of w
 3. Navigate to `localhost:3005/posts`
 
 # Playbook
-TBD
+Synopsis: Migrating coordinates from numeric latitude and longitude to a singe point column.
+
+You can test things work with the web server.
+
+1. Create 'posts' table with lat, lng columns  `1775817691207_table-posts.js`
+2. Add a point type column `1775821859962_add-loc-to-posts.js`
+3. Update index.js & restart the server
 
 # Cheatsheet
 Before running migrations set your DATABASE_URL environment variable, e.g. `set DATABASE_URL=postgres://USERNAME:PASSWORD@localhost:5432/dbname` on Windows CMD
