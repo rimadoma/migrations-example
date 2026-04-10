@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/rimadoma/migrations-example/issues"
   },
-  "homepage": "https://github.com/rimadoma/migrations-example#readme"
+  "homepage": "https://github.com/rimadoma/migrations-example#readme",
+  "dependencies": {
+    "node-pg-migrate": "^8.0.4",
+    "pg": "^8.20.0"
+  }
 }
