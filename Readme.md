@@ -1,8 +1,19 @@
-Simple PostgreSQL migration script examples for Node.js
-
-You need to install Node from https://nodejs.org/en/download/ and then `npm install node-pg-migrate pg`
+Simple PostgreSQL migration script examples for Node.js. Includes a toy web server for testing the migration process of coordinate data.
 
 The migrations also create a `pgmigrations` metadata table that keeps track of which migrations have been run. 
+
+# Setup
+* Node.js from https://nodejs.org/en/download/
+* `npm install node-pg-migrate pg` for PostGres migrations
+* `npm install express` for Web server (express) in index.js
+
+# Running the web server
+1. Update pg.Pool config in `index.js`
+2. `npm start`
+3. Navigate to `localhost:3005/posts`
+
+# Playbook
+TBD
 
 # Cheatsheet
 Before running migrations set your DATABASE_URL environment variable, e.g. `set DATABASE_URL=postgres://USERNAME:PASSWORD@localhost:5432/dbname` on Windows CMD
