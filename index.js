@@ -5,8 +5,8 @@ const pool = new Pool({
   host: 'localhost',
   port: 5432,
   database: 'socialnetwork',
-  user: 'postgres',
-  password: 'mypassword',
+  user: 'username',
+  password: 'password',
 });
 
 const app = express();
